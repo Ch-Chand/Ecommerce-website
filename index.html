@@ -38,13 +38,15 @@
                             <form>
                                 <div class="form-group">
                                     <label for="email">Email address:</label>
-                                    <input type="email" name="email1" class="form-control" placeholder="Enter email" id="email">
+                                    <input type="email" name="email1" class="form-control" placeholder="Enter email"
+                                        id="email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="pwd">Password:</label>
-                                    <input type="password" name="pwd1" class="form-control" placeholder="Enter password" id="pwd">
+                                    <input type="password" name="pwd1" class="form-control" placeholder="Enter password"
+                                        id="pwd" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary" onclick="Validation()">Submit</button>
                             </form>
                         </div>
 
@@ -70,21 +72,25 @@
                             <form action="php/signup.php" method="POST">
                                 <div class="form-group">
                                     <label for="name">Name:</label>
-                                    <input type="text" name="name" class="form-control" autocomplete="off" placeholder="Enter Full Name" id="name">
+                                    <input type="text" name="name" class="form-control" autocomplete="off"
+                                        placeholder="Enter Full Name" id="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email address:</label>
-                                    <input type="email" name="email" class="form-control" autocomplete="off" placeholder="Enter email" id="email">
+                                    <input type="email" name="email" class="form-control" autocomplete="off"
+                                        placeholder="Enter email" id="email">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="pwd">Password:</label>
-                                    <input type="password" name="pwd" class="form-control" autocomplete="off" placeholder="Enter password" id="pwd">
+                                    <input type="password" name="pwd" class="form-control" autocomplete="off"
+                                        placeholder="Enter password" id="pwd">
                                 </div>
                                 <div class="form-group form-check">
                                     <label class="form-check-label"></label>
-                                        <input class="form-check-input" type="checkbox" value="agree" id="check" name="check"> I Agree
-                                    
+                                    <input class="form-check-input" type="checkbox" value="agree" id="check"
+                                        name="check"> I Agree
+
                                 </div>
                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                             </form>
@@ -420,10 +426,14 @@
         </div>
         <div class="row">
             <div class="col bg-primary">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor accusantium cum quam est nam optio maiores deserunt doloremque iure assumenda amet qui, nesciunt, quod aperiam perspiciatis officia ea doloribus sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor accusantium cum quam est nam optio
+                    maiores deserunt doloremque iure assumenda amet qui, nesciunt, quod aperiam perspiciatis officia ea
+                    doloribus sit.</p>
             </div>
             <div class="col bg-danger">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, quod autem quis neque culpa cum vel tempore tenetur sapiente itaque inventore error est labore soluta deserunt reiciendis aperiam accusantium animi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, quod autem quis neque culpa cum vel
+                    tempore tenetur sapiente itaque inventore error est labore soluta deserunt reiciendis aperiam
+                    accusantium animi.</p>
             </div>
         </div>
     </div>
