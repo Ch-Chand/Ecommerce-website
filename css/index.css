@@ -6,3 +6,12 @@ body{
     width: 150px !important;
     height: 100px !important;
 }
+
+.owl-carousel .owl-nav .owl-prev:before{
+    content: "\f053";
+    margin-right:10px;
+}
+.owl-carousel .owl-nav .owl-next:after{
+    content: "\f054";
+    margin-right:10px;
+}

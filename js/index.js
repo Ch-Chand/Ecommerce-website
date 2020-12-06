@@ -1,17 +1,24 @@
 /*  Carosel */
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    autoplay: true,
+    autoplayTimeout: 1000,
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:3
+        600: {
+            items: 3
         },
-        1000:{
-            items:5
+        1000: {
+            items: 5
         }
     }
 })
