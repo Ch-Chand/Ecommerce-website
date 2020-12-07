@@ -4,7 +4,7 @@ $('.owl-carousel').owlCarousel({
     animateIn: 'flipInX',
     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 3000,
     stagePadding: 50,
     loop: true,
     margin: 10,

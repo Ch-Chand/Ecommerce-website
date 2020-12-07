@@ -1,0 +1,68 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#same-button{
+    background-color: #C92677;
+    color: white;
+}
+
+#same-button:hover{
+    background-color: blue;
+}
+
+#jumbo-button{
+    background-color: #C92677;
+    color: white;
+}
+#jumbo-button:hover{
+    background-color: blue;
+}
+
+
+#logo-pic{
+    width: 150px !important;
+    height: 100px !important;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -3rem;
+}
+
+#sale-heading{
+    color: #C92677;
+}
+
+/*==================== 
+	Footer 
+====================== */
+.line{
+    width: 30%;
+    height: 3px;
+    border-radius: 2px;
+    margin-left: 0px;
+    background: linear-gradient(to left, red, blue);
+}
+
+.footer-links{
+    color: #C92677;
+}
+.footer-links:hover{
+    text-decoration: none;
+}
+
+.footer-para{
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+#footer-button{
+    background-color: #C92677;
+    color: white;
+}
+#footer-button:hover{
+    background-color: blue;
+}
