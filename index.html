@@ -23,11 +23,9 @@
     <link rel="stylesheet" type="text/css" href="csshake.min.css">
     <!-- or from surge.sh -->
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
     <!--Title-->
     <title>Lay Ja</title>
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -39,8 +37,9 @@
                 <a class="top-links px-4 text-muted" href="#">Products</a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 text-right">
-                <a class="top-links px-4" href="#" data-toggle="modal" data-target="#myModal1">Sign In</a>
-                <a class="top-links px-4" href="#" data-toggle="modal" data-target="#myModal2">Sign Up</a>
+                <a class="top-links px-4" id="sign_in_button" href="#" data-toggle="modal" data-target="#myModal1">Sign In</a>
+                <a class="top-links px-4" id="sign_up_button" href="#" data-toggle="modal" data-target="#myModal2">Sign Up</a>
+                <a href="#" id="account"></a>
             </div>
             <div class="modal" id="myModal1">
                 <div class="modal-dialog">
@@ -61,13 +60,9 @@
                                     <input type="password" name="pwd1" class="form-control" placeholder="Enter password"
                                         id="pwd" required>
                                 </div>
-                                <button type="submit" class="btn btn-primary" onclick="Validation()">Submit</button>
+                                <button type="submit" class="btn btn-primary" onClick="Validation()">Submit</button>
+                                <span id="myspan1"></span>
                             </form>
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -84,38 +79,35 @@
 
                         <!-- Modal body -->
                         <div class="modal-body">
-                            <form action="php/signup.php" method="POST">
+                            <form>
                                 <div class="form-group">
                                     <label for="name">Name:</label>
                                     <input type="text" name="name" class="form-control" autocomplete="off"
-                                        placeholder="Enter Full Name" id="name">
+                                        placeholder="Enter Full Name" id="name2">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email address:</label>
                                     <input type="email" name="email" class="form-control" autocomplete="off"
-                                        placeholder="Enter email" id="email">
+                                        placeholder="Enter email" id="email2">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="pwd">Password:</label>
                                     <input type="password" name="pwd" class="form-control" autocomplete="off"
-                                        placeholder="Enter password" id="pwd">
+                                        placeholder="Enter password" id="pwd2">
                                 </div>
                                 <div class="form-group form-check">
                                     <label class="form-check-label"></label>
-                                    <input class="form-check-input" type="checkbox" value="agree" id="check"
+                                    <input class="form-check-input" type="checkbox" id="check2"
                                         name="check"> I Agree
+                                    <a href="#"> Privacy Policy & Terms</a>
 
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" name="submit" onClick="Creation()"
+                                    class="btn btn-primary">Submit</button>
+                                <span id="myspan2"></span>
                             </form>
                         </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -677,6 +669,17 @@
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 
