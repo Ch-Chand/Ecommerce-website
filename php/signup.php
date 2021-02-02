@@ -17,7 +17,6 @@ if ($con->connect_error == false) {
         mysqli_query($con, $query);
         echo "Yes";
     } else {
-        echo "No";
     }
 }
 ?>

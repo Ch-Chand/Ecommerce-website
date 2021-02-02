@@ -34,7 +34,7 @@ $('.owl-carousel').owlCarousel({
 
 /* Sign In, Up Forms */
 
-function Creation() {
+function SignUp() {
     val1 = document.getElementById("name2").value;
     val2 = document.getElementById("email2").value;
     val3 = document.getElementById("pwd2").value;
@@ -62,7 +62,7 @@ function Creation() {
 
 
 
-function Validation() {
+function SignIn() {
     va1 = document.getElementById("email1").value;
     va2 = document.getElementById("pwd1")
 
@@ -74,7 +74,7 @@ function Validation() {
             document.getElementById("myspan1").innerHTML = this.responseText;
     };
 
-    xmlhttp.open("GET", "ajaxdbinsert.php?v1=" + rr + "&v2=" + nn + "&v3=" + mm, true);
+    xmlhttp.open("GET", "php/signin.php?v1=" + rr + "&v2=" + nn + "&v3=" + mm, true);
     xmlhttp.send();
 
 }
